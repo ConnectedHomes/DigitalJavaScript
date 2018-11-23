@@ -3,7 +3,7 @@ Feature: Anonymous_Submit_Meter_Reading
 
 @ASMR_Invalid_Account_And_meter
 Scenario Outline: Verify whether the customer is displayed with appropriate error message when invalid details are entered
-Given user lands on SMR page
+Given user lands on SMR pages
 When user navigate to the SMR page for "<fuel-type>"
 And user enter the "<email-address>","<account-Number>","<postcode>" for "<fuel-type>"
 Then Error message is displayed as "<error-message>" for "<error-type>"
